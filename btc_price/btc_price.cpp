@@ -11,7 +11,7 @@
 
 #include "resource.h"
 //windres resource.rc -O coff -o resource.res
-//g++ btc_price.cpp resource.res -o btc_price.exe -lwininet -lgdi32 -mwindows
+//g++ btc_price.cpp resource.res -o btc_price.exe -lwininet -lgdi32 -mwindows -static -static-libgcc -static-libstdc++
 
 std::string json_data;
 double oldPrice = 0;
